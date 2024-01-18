@@ -4,4 +4,5 @@
 
 local opt = vim.opt
 
-opt.relativenumber = false
+-- opt.background = "light"
+opt.relativenumber = true
