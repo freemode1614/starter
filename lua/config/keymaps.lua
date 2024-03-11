@@ -7,3 +7,6 @@ local Util = require("lazyvim.util")
 vim.keymap.set("n", "<C-/>", function()
   Util.terminal(nil, { border = "rounded" })
 end, { desc = "Term with border" })
+
+vim.keymap.set("n", "<C-S>", "<CMD>wa<CR>", { desc = "Save all files" })
+vim.keymap.set("i", "<C-S>", "<CMD>wa<CR>", { desc = "Save all files" })
