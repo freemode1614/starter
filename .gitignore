@@ -6,3 +6,5 @@ debug
 foo.*
 *.log
 data
+# Dont't sync this fule, proxy is only work under company's network.
+lua/plugins/nvim-treesitter.lua
