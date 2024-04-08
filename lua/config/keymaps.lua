@@ -11,4 +11,4 @@ end, { desc = "Term with border" })
 vim.keymap.set("n", "<C-S>", "<CMD>wa<CR>", { desc = "Save all files" })
 vim.keymap.set("i", "<C-S>", "<CMD>wa<CR>", { desc = "Save all files" })
 
-vim.keymap.set("n", "<Space-h>", "<CMD>TSBufEnable highlight<CR>", { desc = "Enabled TreeSitter highlight" })
+vim.keymap.set("n", "<leader>h", "<CMD>TSBufEnable highlight<CR>", { desc = "Enabled TreeSitter highlight" })
