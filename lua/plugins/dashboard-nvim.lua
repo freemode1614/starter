@@ -52,11 +52,7 @@ return {
       opts.config.footer = function()
         local stats = require("lazy").stats()
         local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-<<<<<<< HEAD
         return { "", "", "", "", "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
-=======
-        return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
->>>>>>> a0d9825 (Update config)
       end
 
       return opts
