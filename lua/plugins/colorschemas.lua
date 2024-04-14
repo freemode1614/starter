@@ -26,10 +26,4 @@ return {
       siderbars = { "Neo-tree" },
     },
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
-  },
 }
