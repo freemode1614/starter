@@ -16,6 +16,7 @@ require("lazy").setup({
       import = "lazyvim.plugins",
       opts = {
         colorscheme = "catppuccin",
+        format = false,
       },
     },
     -- import any extras modules here
