@@ -10,3 +10,12 @@ vim.api.nvim_create_autocmd({
     vim.b.autoformat = false
   end,
 })
+
+vim.api.nvim_create_autocmd({
+  "BufRead",
+}, {
+  pattern = { "*" },
+  callback = function()
+    vim.api.nvim_cmd({ "<cmd>TSBufEnable highlight<cr>" })
+  end,
+})
