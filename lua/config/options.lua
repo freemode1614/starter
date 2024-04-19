@@ -6,3 +6,5 @@ local opt = vim.opt
 
 -- opt.background = "light"
 opt.relativenumber = true
+
+vim.g.autoformat = false
