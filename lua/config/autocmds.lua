@@ -10,3 +10,12 @@ vim.api.nvim_create_autocmd({
     vim.cmd("TSBufEnable highlight")
   end,
 })
+
+vim.api.nvim_create_autocmd({
+  "FileType",
+}, {
+  pattern = { "*.tsx", "*.ts", "*.js", "*.jsx" },
+  callback = function()
+    vim.cmd("TSBufEnable highlight")
+  end,
+})
