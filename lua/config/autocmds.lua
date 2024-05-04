@@ -16,6 +16,8 @@ vim.api.nvim_create_autocmd({
 }, {
   pattern = { "*.tsx,*.ts,*.js,*.jsx" },
   callback = function()
-    vim.b.autoformat = false
+    if vim.b then
+      vim.b.autoformat = false
+    end
   end,
 })
