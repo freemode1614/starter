@@ -17,6 +17,7 @@ vim.api.nvim_create_autocmd({
   pattern = { "*.tsx,*.ts,*.js,*.jsx" },
   callback = function()
     if vim.b then
+      ---@diagnostic disable-next-line: inject-field
       vim.b.autoformat = false
     end
   end,
