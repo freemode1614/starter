@@ -14,7 +14,7 @@ vim.api.nvim_create_autocmd({
 vim.api.nvim_create_autocmd({
   "FileType",
 }, {
-  pattern = { "*.tsx,*.ts,*.js,*.jsx" },
+  pattern = { "*.tsx,*.ts,*.js,*.jsx", "*.hbs" },
   callback = function()
     if vim.b then
       ---@diagnostic disable-next-line: inject-field
