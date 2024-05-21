@@ -1,0 +1,18 @@
+return {
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        cmd = "Neotree",
+        opts = {
+            window = {
+                position = "float"
+            },
+            filesystem = {
+                filtered_items = {
+                    hide_dotfiles = false,
+                    hide_gitignored = false
+                }
+            }
+        }
+    }
+}
