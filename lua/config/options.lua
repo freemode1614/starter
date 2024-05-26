@@ -7,10 +7,16 @@ local alpha = function()
 end
 
 if vim.g.neovide then
-    vim.g.neovide_window_blurred = true
-    vim.g.neovide_show_border = true
-    vim.g.neovide_transparency = 0.1
-    vim.g.transparency = 0.6
+    -- vim.g.neovide_window_blurred = true
+    -- vim.g.neovide_show_border = true
+    -- vim.g.neovide_transparency = 0.1
+    -- vim.g.transparency = 0.6
+    vim.g.neovide_theme = 'auto'
+    vim.g.neovide_confirm_quit = true
+    vim.g.neovide_profiler = false
+    vim.g.neovide_cursor_animation_length = 0.1
+    vim.g.neovide_cursor_trail_size = 0.4
+    vim.g.neovide_cursor_vfx_mode = "pixiedust"
     vim.o.guifont = "Mononoki Nerd Font:h16" -- text below applies for VimScript
 end
 
