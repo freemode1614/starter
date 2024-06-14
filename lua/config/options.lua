@@ -22,15 +22,6 @@ if vim.g.neovide then
   vim.o.guifont = "Mononoki Nerd Font:h16" -- text below applies for VimScript
 end
 
--- if vim.g.neovide then
---     vim.g.neovide_window_blurred = true
---     vim.g.neovide_show_border = true
---     vim.g.neovide_transparency = 0.1
---     vim.g.transparency = 0.6
---     vim.o.guifont = "Mononoki Nerd Font:h16" -- text below applies for VimScript
--- end
-
-local opt = vim.opt
-
+-- local opt = vim.opt
 -- opt.background = "light"
-opt.relativenumber = true
+-- opt.relativenumber = true
