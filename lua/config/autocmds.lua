@@ -11,14 +11,16 @@ vim.api.nvim_create_autocmd({
   end,
 })
 
-vim.api.nvim_create_autocmd({
-  "FileType",
-}, {
-  pattern = { "*.tsx,*.ts,*.js,*.jsx", "*.hbs" },
-  callback = function()
-    if vim.b then
-      ---@diagnostic disable-next-line: inject-field
-      vim.b.autoformat = false
-    end
-  end,
-})
+-- local set_filetype_autoformat =
+
+-- vim.api.nvim_create_autocmd({
+--   "FileType",
+-- }, {
+--   pattern = { "*.tsx, *.ts, *.js, *.jsx", "*.hbs" },
+--   callback = function()
+--     if vim.b then
+--       ---@diagnostic disable-next-line: inject-field
+--       vim.b.autoformat = false
+--     end
+--   end,
+-- })
